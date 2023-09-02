@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-10">
+    <input
+      type="text"
+      id="taskInput"
+      class="form-control"
+      placeholder="Add a new task"
+      #newItem
+    />
+  </div>
+  <div class="col-md-2 text-center">
+    <button
+      id="addTaskBtn"
+      class="btn btn-primary btn-block"
+      (click)="addNewTask(newItem.value)"
+    >
+      Add Task
+    </button>
+  </div>
+</div>

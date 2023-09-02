@@ -1,0 +1,6 @@
+<div>
+  <div class="container mt-5">
+    <app-to-do-form (newItemEvent)="addTask($event)"></app-to-do-form>
+    <app-to-do-list [items]="tasks"></app-to-do-list>
+  </div>
+</div>
